@@ -1,0 +1,677 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google IO 2012</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--This one seems to work all the time, but really small on ipad-->
+    <!--<meta name="viewport" content="initial-scale=0.4">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="all" href="theme/css/app.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <base target="_blank">
+    <!-- This amazingness opens all links in a new tab. -->
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+    <script type="text/x-mathjax-config">
+    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$']]}})
+    </script>
+    <script src="js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+</head>
+
+<body style="opacity: 0">
+
+    <slides class="layout-widescreen">
+
+        <slide class="logoslide nobackground">
+            <article class="flexbox vcenter">
+                <span>
+                    <img src="img/banner.png">
+                </span>
+            </article>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+            <hgroup class="auto-fadein">
+                <h1 data-config-title>
+                    <!-- populated from slide_config.json -->
+                </h1>
+                <h2 data-config-subtitle>
+                    <!-- populated from slide_config.json -->
+                </h2>
+                <p data-config-presenter>
+                    <!-- populated from slide_config.json -->
+                </p>
+            </hgroup>
+        </slide>
+
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Agenda</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><ul>
+<li>O infinito está próximo<ul>
+<li>Reta</li>
+<li>Formas geométricas</li>
+<li>Círculo</li>
+</ul>
+</li>
+<li>Viagem no Tempo</li>
+<li>Contruindo um Jogo</li>
+</ul></article>
+            
+        </slide>
+        
+        <slide class="dark quote nobackground"  >
+            
+            <hgroup>
+                <h2></h2>
+                <h3></h3>
+            </hgroup>
+            <article class="flexbox vleft" ><p class="big text-center">
+    O infinito está próximo
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Imagine um segmento de reta real com tamanho de <strong>1m</strong>.</p>
+<p>Imagine que nosso amigo deve chegar ao final da reta saltando sempre
+na metade do que falta.</p>
+<p><object class="center" data="img/reta-1.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Inicialmente, teremos 2 segmentos de reta com tamanho <strong>0,5m</strong>.</p>
+<p><object class="center" data="img/reta-2.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dividindo outra vez na metade teremos segmentos de tamanho <strong>0,25m</strong>.</p>
+<p><object class="center" data="img/reta-3.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p><object class="center" data="img/reta-4.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p><object class="center" data="img/reta-5.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Segmento de Reta - Finito ou Infinito?</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p><object class="center" data="img/reta-6.svg" width="100%" type="image/svg+xml"></object></p>
+<p class="big text-center">
+    Continuando assim, quando nosso amigo chegará ao final?
+</p></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/default-bg.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2>Formas Geométricas</h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>O número mínimo de segmentos de reta que formam um polígono é 3.</p>
+<p>Chamamos um polígono de <strong>3</strong> lados de triângulo.</p>
+<p><object class="center" data="img/poligono-1.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Chamamos um polígono de <strong>4</strong> lados de quadrado.</p>
+<p><object class="center" data="img/poligono-2.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dessa forma podemos continuar a aumentar o número de lados (<strong>5</strong>).</p>
+<p><object class="center" data="img/poligono-3.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dessa forma podemos continuar a aumentar o número de lados (<strong>6</strong>).</p>
+<p><object class="center" data="img/poligono-4.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dessa forma podemos continuar a aumentar o número de lados (<strong>8</strong>).</p>
+<p><object class="center" data="img/poligono-5.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dessa forma podemos continuar a aumentar o número de lados (<strong>12</strong>).</p>
+<p><object class="center" data="img/poligono-6.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Dessa forma podemos continuar a aumentar o número de lados (<strong>20</strong>).</p>
+<p><object class="center" data="img/poligono-7.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide class="dark quote nobackground"  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="flexbox vleft" ><p class="big text-center">
+    E se colocarmos infinitos lados?
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Formas Geométricas</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Teremos um círculo, um polígono com infinitos lados.</p>
+<p><object class="center" data="img/poligono-8.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/default-bg.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2>Círculo</h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p>Sabemos que o comprimento do círculo é dado por:</p>
+<p>$C = 2 \cdot r \cdot \pi$</p>
+<p class="big">
+OK, mas de onde vem o $\pi$?
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Seja um círculo de <strong>40,5 cm</strong> de comprimento.</p>
+<p>Isso quer dizer que ele possui <strong>12,89 cm</strong> de diâmetro,
+ou <strong>6,445 cm</strong> de raio.</p>
+<p><object class="center" data="img/circulo-1.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Ao dividirmos $40,5 \div 12,89 = 3,14197 $</p>
+<p><object class="center" data="img/circulo-1.svg" width="100%" type="image/svg+xml"></object></p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Área do Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p>Temos o comprimento</p>
+<p>$C = 2 \cdot r \cdot \pi$.</p>
+<p>E de onde vem a fórmula da Área?</p>
+<p>$A = \pi r^2$</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Integral</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p class="big">
+$\int x \cdot dx$
+</p>
+
+<p>Usada para somar todos os valores de uma função em $R$</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Integral</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p>Integral de uma constante $k$</p>
+<p class="big">
+$\int_a^b k \cdot dx = k \cdot x /_a^b = k \cdot b - (k \cdot a)$
+</p>
+
+<p>Exemplo:</p>
+<p class="big">
+$\int_0^4 2 \cdot dx = 2 \cdot x /_0^4 = 2 \cdot 4 - (2 \cdot 0) = 8$
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Integral</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Vejamos isso graficamente:</p>
+<p><object class="center" data="img/integral-1.svg" width="100%" type="image/svg+xml"></object></p>
+<p>Nota-se que dá exatamente a área de um retângulo.</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Integral</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p>Integral de uma variável $x^n$</p>
+<p class="big">
+$\int_a^b x^n \cdot dx = \frac{x^{n + 1}}{n + 1} /_a^b
+= \frac{b^{n + 1}}{n + 1} - (\frac{a^{n + 1}}{n + 1})$
+</p>
+
+<p>Exemplo:</p>
+<p class="big">
+$\int_0^4 x \cdot dx = \frac{x^2}{2} /_0^4 = \frac{4^2}{2} - (\frac{0^2}{2}) = 8$
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Integral</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Vejamos isso graficamente:</p>
+<p><object class="center" data="img/integral-2.svg" width="100%" type="image/svg+xml"></object></p>
+<p>Nota-se que dá exatamente a área de um triângulo escaleno.</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Área do Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p>Agora que já temos a ideia de integral podemos calcular a área do círculo.</p>
+<p class="big">
+$A = \int_0^r 2 \cdot \pi \cdot r \cdot dr$
+</p>
+
+<p class="big">
+$2 \pi \frac{r^2}{2} /_0^r = 2 \pi \frac{r^2}{2} - (\frac{0^2}{2})$
+</p>
+
+<p class="big">
+$A = \pi \cdot r^2 $
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Área do Círculo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Imagine que estamos somando círculos de todos os tamanhos até chegar o maior:</p>
+<p><object class="center" data="img/integral-3.svg" width="100%" type="image/svg+xml"></object></p>
+<!-- Mostrar como saber o volume da esfera --></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/default-bg.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2>Conclusões sobre o Infinito</h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/default-bg.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2>Viagem no tempo<br/>É possível?</h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Viagem no tempo</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p class="big">
+Sim, mas somente para o Futuro!
+</p>
+
+<p>Nada de Exterminador do Futuro, ou De Volta para o Futuro,
+ou Planeta do Macacos.</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Viagem no tempo</h2>
+                <h3></h3>
+            </hgroup>
+            <article class="text-center" ><p class="big">
+$E = m \cdot c^2$
+</p></article>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Viagem no tempo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Experiência para comprovar a Teoria da Relatividade:</p>
+<p>Duas pessoas usando relógios atômicos.</p>
+<p>Uma delas permanace na terra e outra viaja em um avião supersônico.</p>
+<p>Ao voltar a Terra, os relógios são comparados e percebe-se que a hora
+do relógio da pessoa que viajou no avião supersônico é menor que
+a hora do relógio da pessoa que permaneceu na Terra.</p></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/default-bg.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2>Contruindo um Jogo</h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Contruindo um Jogo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Em um jogo podemos encontrar elementas da</p>
+<ul>
+<li>Física<ul>
+<li>Movimentação</li>
+<li>Ação e Reação</li>
+</ul>
+</li>
+<li>Biologia<ul>
+<li>Inteligência Artificial</li>
+<li>Movimentação</li>
+<li>Esqueleto</li>
+</ul>
+</li>
+</ul></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/angry-birds-clone.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2></h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Contruindo um Jogo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Em um jogo podemos encontrar elementas da</p>
+<ul>
+<li>Geografia<ul>
+<li>Mapas</li>
+<li>Clima</li>
+</ul>
+</li>
+<li>História<ul>
+<li>Narrativa</li>
+<li>Passado do personagem</li>
+<li>Possível futuro do personagem</li>
+<li>Jogos baseados em histórias reais</li>
+</ul>
+</li>
+</ul></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/tiled-1.png)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2></h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/enemy-territory-1.jpg)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2></h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2>Contruindo um Jogo</h2>
+                <h3></h3>
+            </hgroup>
+            <article ><p>Em um jogo podemos encontrar elementas da</p>
+<ul>
+<li>Matemática<ul>
+<li>Matrizes</li>
+<li>Funções</li>
+<li>Inteligência Artificial</li>
+</ul>
+</li>
+</ul></article>
+            
+        </slide>
+        
+        <slide class="segue nobackground fill"  style="background-image: url(img/bomberman-5.jpg)" >
+            
+            <aside class="gdbar">
+                <img src="img/logo.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h2></h2>
+                
+            </hgroup>
+            
+        </slide>
+        
+        <slide  >
+            
+            <hgroup>
+                <h2></h2>
+                <h3></h3>
+            </hgroup>
+            <article ></article>
+            
+        </slide>
+        
+
+        <slide class="thank-you-slide segue nobackground">
+            <aside class="gdbar right">
+                <img src="img/logo.png">
+            </aside>
+            <article class="flexbox vleft auto-fadein">
+                <h2>&lt;Obrigado pela aten&ccedil;&atilde;o!&gt;</h2>
+                <p>Qualquer d&uacute;vida entre em contato.</p>
+            </article>
+            <p class="auto-fadein" data-config-contact>
+                <!-- populated from slide_config.json -->
+            </p>
+        </slide>
+
+        <!--
+        <slide class="logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <span><img src="images/google_developers_logo_white.png"></span>
+            </article>
+        </slide>
+        -->
+
+        <slide class="backdrop"></slide>
+
+    </slides>
+
+</body>
+
+</html>
