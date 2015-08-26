@@ -1,0 +1,1 @@
+!function(a){var b=a.mo.OPTYPES;a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{prefix:{"⟦":b.OPEN,"⟪":b.OPEN,"⟬":b.OPEN},postfix:{"⟧":b.CLOSE,"⟫":b.CLOSE,"⟭":b.CLOSE}}}),MathJax.Ajax.loadComplete(a.optableDir+"/MiscMathSymbolsA.js")}(MathJax.ElementJax.mml);

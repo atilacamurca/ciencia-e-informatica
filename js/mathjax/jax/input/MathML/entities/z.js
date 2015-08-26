@@ -1,0 +1,1 @@
+!function(a){MathJax.Hub.Insert(a.Parse.Entity,{ZHcy:"Ж",Zacute:"Ź",Zcaron:"Ž",Zcy:"З",Zdot:"Ż",ZeroWidthSpace:"​",Zeta:"Ζ",zacute:"ź",zcaron:"ž",zcy:"з",zdot:"ż",zeetrf:"ℨ",zhcy:"ж",zwj:"‍",zwnj:"‌"}),MathJax.Ajax.loadComplete(a.entityDir+"/z.js")}(MathJax.InputJax.MathML);

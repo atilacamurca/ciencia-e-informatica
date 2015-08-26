@@ -1,0 +1,1 @@
+!function(a){var b=a.mo.OPTYPES,c=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{prefix:{"ⅅ":b.ORD21,"ⅆ":[2,0,c.ORD]}}}),MathJax.Ajax.loadComplete(a.optableDir+"/LetterlikeSymbols.js")}(MathJax.ElementJax.mml);
