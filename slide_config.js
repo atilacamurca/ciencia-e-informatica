@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
     // Slide settings
     settings: {
         title: 'Ciência e Informática',
-        subtitle: 'Subtitle Goes Here',
+        //subtitle: 'Subtitle Goes Here',
         eventInfo: {
           title: 'COMSOLiD 8',
           //date: '1/x/2013'

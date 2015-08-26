@@ -9,6 +9,15 @@ title: Agenda
 
 ---
 
+title: Objetivo
+
+* Pensar
+* Conjecturar
+* "O que vou ser quando crescer?"
+* Um pouco sobre o Curso de Ciência da Computação
+
+---
+
 class: dark quote nobackground
 content_class: flexbox vleft
 
@@ -69,7 +78,7 @@ title: Segmento de Reta - Finito ou Infinito?
 
 title: Formas Geométricas
 class: segue nobackground fill
-image: img/default-bg.png
+image: img/shapes-1.jpg
 
 ---
 
@@ -151,7 +160,7 @@ Teremos um círculo, um polígono com infinitos lados.
 
 title: Círculo
 class: segue nobackground fill
-image: img/default-bg.png
+image: img/circle-1.jpg
 
 ---
 
@@ -262,7 +271,7 @@ Vejamos isso graficamente:
 
 <object class="center" data="img/integral-2.svg" width="100%" type="image/svg+xml"></object>
 
-Nota-se que dá exatamente a área de um triângulo escaleno.
+Nota-se que dá exatamente a área de um triângulo.
 
 ---
 
@@ -297,13 +306,13 @@ Imagine que estamos somando círculos de todos os tamanhos até chegar o maior:
 
 title: Conclusões sobre o Infinito
 class: segue nobackground fill
-image: img/default-bg.png
+image: img/universe-1.jpg
 
 ---
 
 title: Viagem no tempo<br/>É possível?
 class: segue nobackground fill
-image: img/default-bg.png
+image: img/time-machine-1.jpg
 
 ---
 
@@ -315,15 +324,36 @@ Sim, mas somente para o Futuro!
 </p>
 
 Nada de Exterminador do Futuro, ou De Volta para o Futuro,
-ou Planeta do Macacos.
+ou Planeta do Macacos (exceto no filme 1).
 
 ---
 
 title: Viagem no tempo
+
+Sinopse Planeta dos Macacos (1968)
+
+> Uma espaçonave comandado pelo Coronel Taylor, decolou da Terra em 1972 e viajou
+> 700 anos no futuro devido a viajarem mais rápido que a velocidade da luz por um
+> buraco de minhoca (wormhole).
+
+<footer class="source">Fonte:
+<a href="http://www.imdb.com/title/tt0063442/synopsis?ref_=ttpl_pl_syn">
+	www.imdb.com/title/tt0063442/synopsis?ref_=ttpl_pl_syn
+</a>
+</footer>
+
+---
+
+title: Teoria da Relatividade
 content_class: text-center
 
 <p class="big">
 $E = m \cdot c^2$
+</p>
+
+<p class="big">
+A quantidade de Energia ($E$) é equivalente a quantidade de massa ($m$)
+vezes a velocidade da luz ($c$) ao quadrado.
 </p>
 
 ---
@@ -332,19 +362,28 @@ title: Viagem no tempo
 
 Experiência para comprovar a Teoria da Relatividade:
 
-Duas pessoas usando relógios atômicos.
+Em Outubro de 1971, um físico e um astrônomo levaram relógios atômicos
+a bordo de um avião comercial. Eles voaram 2 vezes ao redor do mundo, primeiro
+para o leste depois para o oeste, e compararam com os relógios que ficaram no
+Observatório Naval do EUA.
 
-Uma delas permanace na terra e outra viaja em um avião supersônico.
+Ao comparar as horas nos relógios perceberam que havia uma diferença. Os relógios
+que estavam com eles no avião tinham a hora mais atrasada, ou seja, se passou menos
+tempo relativamente aos que estavam parados na Terra.
 
-Ao voltar a Terra, os relógios são comparados e percebe-se que a hora
-do relógio da pessoa que viajou no avião supersônico é menor que
-a hora do relógio da pessoa que permaneceu na Terra.
+---
+
+title: Relógio Atômico
+class: nobackground fill
+image: img/atomic-clock.jpg
+
+<footer class="source red">One of the actual HP 5061A Cesium Beam atomic clock units used in the Hafele–Keating experiment</footer>
 
 ---
 
 title: Contruindo um Jogo
 class: segue nobackground fill
-image: img/default-bg.png
+image: img/making-game-1.png
 
 ---
 
@@ -362,6 +401,15 @@ Em um jogo podemos encontrar elementas da
 
 ---
 
+title: Contruindo um Jogo
+
+Movimentação personagem 2D.
+
+<p><img alt="movimentação" src="img/p1_spritesheet.png" style="width: 70%" class="center" /></p>
+
+---
+
+title: Angry Birds Clone
 class: segue nobackground fill
 image: img/angry-birds-clone.png
 
@@ -382,11 +430,13 @@ Em um jogo podemos encontrar elementas da
 
 ---
 
+title: Tiled
 class: segue nobackground fill
 image: img/tiled-1.png
 
 ---
 
+title: Enemy Territory
 class: segue nobackground fill
 image: img/enemy-territory-1.jpg
 
@@ -403,10 +453,16 @@ Em um jogo podemos encontrar elementas da
 
 ---
 
+title: Bomberman 5
 class: segue nobackground fill
 image: img/bomberman-5.jpg
 
 ---
+
+title: Elemental One
+class: segue nobackground fill
+image: img/elemental-one-1.png
+
 
 <!--- Ideias:
 Tópico 1:
