@@ -49,13 +49,106 @@ module.exports = function(grunt) {
             }
         },
 
+        copy: {
+            dist: {
+                files: [
+                    {expand: true, src: ['js/mathjax/**'], dest: '<%= yeoman.dist %>/'},
+                ]
+            }
+        },
 
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'img',
+                    src: '{,*/}*.{png,jpg,jpeg,gif}',
+                    dest: '<%= yeoman.dist %>/img'
+                }]
+            }
+        },
+
+        svgmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'img',
+                    src: '{,*/}*.svg',
+                    dest: '<%= yeoman.dist %>/img'
+                }]
+            }
+        },
+
+        htmlmin: {
+            dist: {
+                options: {
+                    collapseWhitespace: true,
+                    conservativeCollapse: true,
+                    collapseBooleanAttributes: true,
+                    removeCommentsFromCDATA: true,
+                    removeOptionalTags: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '.',
+                    src: ['index.html'],
+                    dest: '<%= yeoman.dist %>'
+                }]
+            }
+        },
+
+        uglify: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'js',
+                    src: '**/*.js',
+                    dest: '<%= yeoman.dist %>/js'
+                }, {
+                    expand: true,
+                    cwd: '.',
+                    src: 'slide_config.js',
+                    dest: '<%= yeoman.dist %>'
+                }]
+            }
+        },
+
+        cssmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'theme/css',
+                    src: ['default.css'],
+                    dest: '<%= yeoman.dist %>/theme/css'
+                }]
+            }
+        },
+
+        'gh-pages': {
+            options: {
+                base: '<%= yeoman.dist %>'
+            },
+            src: ['**']
+        },
     });
-
 
     grunt.registerTask('default', 'Compile then start a connect web server', function(target) {
         grunt.task.run([
             'watch'
         ]);
     });
+
+    grunt.registerTask('build', [
+        'copy',
+        'imagemin',
+        'svgmin',
+        'htmlmin',
+        'uglify',
+        'cssmin'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'gh-pages'
+    ]);
 };
